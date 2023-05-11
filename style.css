@@ -71,3 +71,23 @@ section {
   background-color: #0f0f10;
   z-index: -1;
 }
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(127% + 1.3px);
+  height: 231px;
+}
+
+.wave .shape-fill {
+  fill: #0f0f10;
+}
