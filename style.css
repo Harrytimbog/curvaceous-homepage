@@ -104,3 +104,16 @@ section {
 .layer1 {
   background-image: url('./layer1.svg');
 }
+
+.layer2 {
+  background-image: url('./layer2.svg');
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+.blob-motion {
+  position: absolute;
+  transform: translateY(-20%);
+}

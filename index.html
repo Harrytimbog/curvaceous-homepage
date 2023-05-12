@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
+    <script src=" https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js "></script>
     <title>Curvaceous Homepage</title>
   </head>
   <body>
@@ -82,7 +83,8 @@
         culpa possimus ullam, minima atque earum sunt laborum fugit praesentium?
       </p>
     </section>
-    <section>
+    <div class="spacer layer2 flip"></div>
+    <section class="pink">
       <h1>Nice Curves</h1>
       <p>
         Tempora porro, molestiae dolores eveniet repellendus consequuntur soluta
@@ -90,7 +92,41 @@
         deleniti enim doloribus dignissimos. Similique fugit nostrum quas
         accusamus debitis ipsam veritatis temporibus!
       </p>
+      <svg
+        id="visual"
+        viewBox="0 0 960 300"
+        width="960"
+        height="300"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <g transform="translate(471.51588781305236 169.00084198512388)">
+          <path
+            id="blob1"
+            d="M66.4 -70.3C87.6 -45.3 107.3 -22.6 105.2 -2.1C103.1 18.4 79.1 36.8 57.9 53.3C36.8 69.8 18.4 84.4 0.4 84C-17.7 83.7 -35.4 68.4 -52.5 51.9C-69.7 35.4 -86.3 17.7 -88.2 -1.9C-90.1 -21.4 -77.2 -42.9 -60.1 -67.9C-42.9 -92.9 -21.4 -121.4 0.6 -122C22.6 -122.6 45.3 -95.3 66.4 -70.3"
+            fill="#BB004B"
+          ></path>
+        </g>
+        <g transform="translate(490.98799803519444 139.90203792766695)" style="visibility:hidden">
+          <path
+            id="blob2"
+            d="M78.6 -77.1C92.6 -64.6 88.3 -32.3 82.4 -5.9C76.5 20.5 69 41 55 63.3C41 85.7 20.5 109.8 0.4 109.5C-19.8 109.1 -39.6 84.3 -59.3 61.9C-78.9 39.6 -98.5 19.8 -106.2 -7.8C-114 -35.4 -110 -70.7 -90.4 -83.2C-70.7 -95.7 -35.4 -85.4 -1.5 -83.8C32.3 -82.3 64.6 -89.6 78.6 -77.1"
+            fill="#BB004B"
+          ></path>
+        </g>
+      </svg>
+      <script>
+        const tween = KUTE.fromTo(
+          '#blob1',
+          {path: '#blob1'},
+          {path: '#blob2'},
+          {repeat: 999, duration: 3000, yoyo: true}
+        )
+        tween.start()
+      </script>
     </section>
+    <div class="spacer layer2"></div>
     <section>
       <h1>Nice Curves</h1>
       <p>
